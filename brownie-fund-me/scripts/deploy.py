@@ -1,11 +1,9 @@
-from brownie import accounts, config, FundMe
-from scripts.helpful_scripts import get_account
+from brownie import FundMe
 
 
 def deploy_fund_me():
-    account = get_account()
-    fund_me = FundMe.deploy({"from":account})
-    print(fund_me)
+    pass
+
 
 def main():
     deploy_fund_me()
